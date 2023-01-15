@@ -62,7 +62,7 @@ jobs:
         run: phpcs
 
       - name: Run header checks with DocHeader
-        run: ./vendor/bin/docheader src test
+        run: ./vendor/bin/docheader check src/ test/
 
       - name: Run static code analysis with psalm
         run: psalm --config=psalm.xml
